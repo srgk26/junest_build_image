@@ -14,9 +14,9 @@ This would be the instructions for you to install junest (which are also in Fili
 ## Downloading Junest
 [guest@pc ~]$ git clone git://github.com/fsquillace/junest ~/.local/share/junest ## Downloads junest in your local system
 
-## Add this line to ~/.bashrc configuration
+## Add this line to ~/.bashrc configuration to add junest to PATH
 [guest@pc ~]$ vim ~/.bashrc
-export PATH=~/.local/share/junest/bin:$PATH ## Adds junest to your PATH
+export PATH=~/.local/share/junest/bin:$PATH ## Adds junest to PATH
 
 [guest@pc ~]$ source ~/.bashrc
 
@@ -41,9 +41,9 @@ This is in my system running Arch Linux:
 [user@pc ~]$ sudo pacman -S arch-install-scripts
 [user@pc ~]$ git clone git://github.com/fsquillace/junest ~/.local/share/junest
 
-## Add this line to ~/.bashrc configuration
+## Add this line to ~/.bashrc configuration to add junest to PATH
 [user@pc ~]$ vim ~/.bashrc
-export PATH=~/.local/share/junest/bin:$PATH
+export PATH=~/.local/share/junest/bin:$PATH ## Adds junest to PATH
 
 [user@pc ~]$ source ~/.bashrc
 
@@ -59,9 +59,9 @@ I will then export this image to my unprivileged Linux system, and execute these
 ## Downloading Junest
 [guest@pc ~]$ git clone git://github.com/fsquillace/junest ~/.local/share/junest
 
-## Add this line to ~/.bashrc configuration
+## Add this line to ~/.bashrc configuration to add junest to PATH
 [guest@pc ~]$ vim ~/.bashrc
-export PATH=~/.local/share/junest/bin:$PATH
+export PATH=~/.local/share/junest/bin:$PATH ## Adds junest to PATH
 
 [guest@pc ~]$ source ~/.bashrc
 
