@@ -21,15 +21,19 @@ This would be the instructions for you to install junest (which are also in Fili
 ## Downloading Junest
 [guest@pc ~]$ git clone git://github.com/fsquillace/junest ~/.local/share/junest ## Downloads junest in your local system
 
-## Add this line to ~/.bashrc
+## Add this line to ~/.bashrc configuration
+[guest@pc ~]$ vim ~/.bashrc
 export PATH=~/.local/share/junest/bin:$PATH ## Adds junest to your PATH
 
-## Downloading th latest junets system build image from this repo
+[guest@pc ~]$ source ~/.bashrc
+
+## Downloading the latest junets system build image from this repo
 [guest@pc ~]$ git clone https://github.com/srgk26/junest_build_image.git ## Clone this git repo
 [guest@pc ~]$ cd junest_build_image/build_images ## Move into the directory containing junest build images
 
 ## Installing Junest
 [guest@pc ~]$ junest -i junest-[date]-x86_64.tar.gz ## Replace date with the latest date available; This junest-[date]-x86_64.tar.gz is the custom junest system image from this repository.
+[guest@pc ~]$ cd ~ && rm -rf junest_build_image ## Delete this repo git clone from your system
 ```
 
 ## Custom build instructions
@@ -44,8 +48,11 @@ This is in my system running Arch Linux:
 [user@pc ~]$ sudo pacman -S arch-install-scripts
 [user@pc ~]$ git clone git://github.com/fsquillace/junest ~/.local/share/junest
 
-## Add this line to ~/.bashrc
+## Add this line to ~/.bashrc configuration
+[guest@pc ~]$ vim ~/.bashrc
 export PATH=~/.local/share/junest/bin:$PATH
+
+[guest@pc ~]$ source ~/.bashrc
 
 ## Build system image
 [user@pc ~]$ junest -b -n
@@ -59,8 +66,11 @@ I will then export this image to my unprivileged Linux system, and execute these
 ## Downloading Junest
 [guest@pc ~]$ git clone git://github.com/fsquillace/junest ~/.local/share/junest
 
-## Add this line to ~/.bashrc
+## Add this line to ~/.bashrc configuration
+[guest@pc ~]$ vim ~/.bashrc
 export PATH=~/.local/share/junest/bin:$PATH
+
+[guest@pc ~]$ source ~/.bashrc
 
 ## Installing Junest
 [guest@pc ~]$ junest -i junest-x86_64.tar.gz ## This junest-x86_64.tar.gz is the custom junest system image I built
