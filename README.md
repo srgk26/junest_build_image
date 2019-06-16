@@ -32,8 +32,8 @@ export PATH=~/.local/share/junest/bin:$PATH ## Adds junest to your PATH
 [guest@pc ~]$ cd junest_build_image/build_images ## Move into the directory containing junest build images
 
 ## Installing Junest
-[guest@pc ~]$ junest -i junest-[date]-x86_64.tar.gz ## Replace date with the latest date available; This junest-[date]-x86_64.tar.gz is the custom junest system image from this repository.
-[guest@pc ~]$ cd ~ && rm -rf junest_build_image ## Delete this repo git clone from your system
+[guest@pc build_images]$ junest -i junest-[date]-x86_64.tar.gz ## Replace date with the latest date available; This junest-[date]-x86_64.tar.gz is the custom junest system image from this repository.
+[guest@pc build_images]$ cd ~ && rm -rf junest_build_image ## Delete this repo git clone from your system
 ```
 
 ## Custom build instructions
