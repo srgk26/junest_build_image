@@ -8,7 +8,7 @@ This repo is simply me uploading my own latest junest build images that I will m
 
 ## Junest installation instructions
 
-This would be the instructions for you to install junest (which are also in Filippo's documentation) using my custom build junest build image:
+This would be the instructions for you to install junest (which are also in Filippo's documentation) using my custom built junest build image:
 
 ```
 ## Downloading Junest
@@ -20,7 +20,7 @@ export PATH=~/.local/share/junest/bin:$PATH ## Adds junest to your PATH
 
 [guest@pc ~]$ source ~/.bashrc
 
-## Downloading the latest junets system build image from this repo
+## Downloading the latest junest system build image from this repo
 [guest@pc ~]$ git clone https://github.com/srgk26/junest_build_image.git ## Clone this git repo
 [guest@pc ~]$ cd junest_build_image/build_images ## Move into the directory containing junest build images
 
@@ -42,10 +42,10 @@ This is in my system running Arch Linux:
 [user@pc ~]$ git clone git://github.com/fsquillace/junest ~/.local/share/junest
 
 ## Add this line to ~/.bashrc configuration
-[guest@pc ~]$ vim ~/.bashrc
+[user@pc ~]$ vim ~/.bashrc
 export PATH=~/.local/share/junest/bin:$PATH
 
-[guest@pc ~]$ source ~/.bashrc
+[user@pc ~]$ source ~/.bashrc
 
 ## Build system image
 [user@pc ~]$ junest -b -n
@@ -53,7 +53,7 @@ export PATH=~/.local/share/junest/bin:$PATH
 
 This will give my own junest image with the same name, 'junest-x86_64.tar.gz'.
 
-I will then export this image to my unprivileged Linux system, and execute these:
+I will then export this image to my unprivileged Linux system, and execute these in the guest system:
 
 ```
 ## Downloading Junest
