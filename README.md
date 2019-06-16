@@ -1,17 +1,10 @@
 ## Junest - https://github.com/fsquillace/junest
 
-[Junest](https://github.com/fsquillace/junest) is a cool Arch Linux distro built by [Filippo Squillace](https://github.com/fsquillace/) that runs on any linux
- platform, wiht or without root privileges. This can be useful, for example when working on a remote server where you may need to install packages without goi
-ng through your system administrator. Junest creates a fakeroot within your local user account, granting you full, unrestricted root privileges within your lo
-cal user account (i.e. unrestricted privileges locally, not system-wide). It also means you can use your faourite Arch Linux distro within a Linux system runn
-ing another distro.
+[Junest](https://github.com/fsquillace/junest) is a cool Arch Linux distro built by [Filippo Squillace](https://github.com/fsquillace/) that runs on any linux platform, with or without root privileges. This can be useful, for example when working on a remote server where you may need to install packages without going through your system administrator. Junest creates a fakeroot within your local user account, granting you full, unrestricted root privileges within your local user account (i.e. unrestricted privileges locally, not system-wide). It also means you can use your faourite Arch Linux distro within a Linux system running another distro.
 
-This requires a junest system build image built from an existing Arch Linux system. The default junest image supplied by Filippo is outdated and building a ne
-w junest system based on this image causes problems installing new software packages. The bets solution is to build your own system image, the instructions to
- which are also provided in his documentation.
+This requires a junest system build image built from an existing Arch Linux system. The default junest image supplied by Filippo is outdated and building a new junest system based on this image causes problems installing new software packages. The best solution is to build your own system image, the instructions to which are also provided in his documentation.
 
-This repo is simply me uploading my own latest junest build images that I will maintain and upload time-to-time. This is the build image I would use, and you 
-are welcome to use this image too. The image build is merely system image, and does not contain any additional packages I have installed on my system.
+This repo is simply me uploading my own latest junest build images that I will maintain and upload time-to-time. This is the build image I would use, and you are welcome to use this image too. The image build is merely system image, and does not contain any additional packages I have installed on my system.
 
 ## Junest installation instructions
 
@@ -75,3 +68,15 @@ export PATH=~/.local/share/junest/bin:$PATH
 ## Installing Junest
 [guest@pc ~]$ junest -i junest-x86_64.tar.gz ## This junest-x86_64.tar.gz is the custom junest system image I built
 ```
+
+## Junest usage instructions
+
+After installing junest, junest can be run by:
+
+```
+[guest@pc ~]$ junest ## Run junest as a normal user
+[guest@pc ~]$ junest -f ## Run junest as a fakeroot user
+```
+The default junest directory is located in ~/.junest directory, and all packages installed with junest would be located here.
+
+For further details, kindly visit the [junest official GitHub page](https://github.com/fsquillace/junest).
