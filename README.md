@@ -8,17 +8,19 @@ This repo is simply me uploading my own latest junest build images that I will m
 
 ## Junest installation instructions
 
+Firstly, you will need to have `git-lfs` installed on your system. This is necessary to be able to download the junest build images uploaded to this GitHub repo using `git-lfs`. Download it from https://git-lfs.github.com/, or use your package manager (if you have permission). For Arch Linux, this would be `sudo pacman -S git-lfs`.
+
 This would be the instructions for you to install junest (which are also in Filippo's documentation) using my custom built junest build image:
 
 ```
 ## Downloading Junest
 [guest@pc ~]$ git clone git://github.com/fsquillace/junest ~/.local/share/junest ## Downloads junest in your local system
 
-## Add this line to ~/.bashrc configuration to add junest to PATH
-[guest@pc ~]$ vim ~/.bashrc
+## Add this line to ~/.bash_profile configuration to add junest to PATH
+[guest@pc ~]$ vim ~/.bash_profile
 export PATH=~/.local/share/junest/bin:$PATH ## Adds junest to PATH
 
-[guest@pc ~]$ source ~/.bashrc
+[guest@pc ~]$ source ~/.bash_profile
 
 ## Downloading the latest junest system build image from this repo
 [guest@pc ~]$ git clone https://github.com/srgk26/junest_build_image.git ## Clone this git repo
@@ -41,11 +43,11 @@ This is in my system running Arch Linux:
 [user@pc ~]$ sudo pacman -S arch-install-scripts
 [user@pc ~]$ git clone git://github.com/fsquillace/junest ~/.local/share/junest
 
-## Add this line to ~/.bashrc configuration to add junest to PATH
-[user@pc ~]$ vim ~/.bashrc
+## Add this line to ~/.bash_profile configuration to add junest to PATH
+[user@pc ~]$ vim ~/.bash_profile
 export PATH=~/.local/share/junest/bin:$PATH ## Adds junest to PATH
 
-[user@pc ~]$ source ~/.bashrc
+[user@pc ~]$ source ~/.bash_profile
 
 ## Build system image
 [user@pc ~]$ junest -b -n
@@ -59,11 +61,11 @@ I will then export this image to my unprivileged Linux system, and execute these
 ## Downloading Junest
 [guest@pc ~]$ git clone git://github.com/fsquillace/junest ~/.local/share/junest
 
-## Add this line to ~/.bashrc configuration to add junest to PATH
-[guest@pc ~]$ vim ~/.bashrc
+## Add this line to ~/.bash_profile configuration to add junest to PATH
+[guest@pc ~]$ vim ~/.bash_profile
 export PATH=~/.local/share/junest/bin:$PATH ## Adds junest to PATH
 
-[guest@pc ~]$ source ~/.bashrc
+[guest@pc ~]$ source ~/.bash_profile
 
 ## Installing Junest
 [guest@pc ~]$ junest -i junest-x86_64.tar.gz ## This junest-x86_64.tar.gz is the custom junest system image I built
