@@ -1,4 +1,4 @@
-## ***Deprecated*** Junest - https://github.com/fsquillace/junest ***Deprecated***
+## \*\*\*Deprecated*** Junest - https://github.com/fsquillace/junest \*\*\*Deprecated***
 
 [Junest](https://github.com/fsquillace/junest) is a cool Arch Linux distro built by [Filippo Squillace](https://github.com/fsquillace/) that runs on any linux platform, with or without root privileges. This can be useful, for example when working on a remote server where you may need to install packages without going through your system administrator. Junest creates a fakeroot within your local user account, granting you full, unrestricted root privileges within your local user account (i.e. unrestricted privileges locally, not system-wide).
 
